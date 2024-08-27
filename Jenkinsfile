@@ -49,7 +49,7 @@ pipeline {
                 sh '''
                 npm install serve
                 node_modules/.bin/serve -s build &
-                sleep 9
+                sleep 10
                 npx playwrite test
                 '''
             }
